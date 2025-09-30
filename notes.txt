@@ -16,3 +16,20 @@ Ok so this is kinda notes Diary for me to remember stuff;
 5. How to run the server
    >>> python manage.py runserver
    >>> python manage.py runserver 8000 (to run in specific port)
+
+6. "views.py" {project_name/app_name/views.py} is used to create views for our project, it the main file or we
+   can say the controller of our project.
+
+
+7. templates = html files are stored in templates folder
+   static files like css, js, images are stored in static folder
+   It is one of the boon of Django that it automatically recognizes these folders.
+   But for that we need to make some changes in settings.py file
+   a. In settings.py file add the following code in TEMPLATES list
+      'DIRS': ['templates'],  # add this line
+   b. In settings.py file add the following code at the end of the file
+      STATIC_URL = 'static/'
+      STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # add this line
+
+   c. In html file load the static files using {% load static %} at the top of the file
+      and then use the static files like this
