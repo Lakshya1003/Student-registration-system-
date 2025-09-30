@@ -1,0 +1,18 @@
+Ok so this is kinda notes Diary for me to remember stuff;
+
+1. How to setup virtual environment in python
+   >>> python -m venv env
+
+2. How to setup venv using uv
+   >>> pip install uv
+   >>> uv venv
+
+3. How to initialize Django project
+   >>> django-admin startproject project_name {in our case it is : Student_registration_system}
+
+4. How to activate venv
+   >>> .venv\Scripts\activate
+
+5. How to run the server
+   >>> python manage.py runserver
+   >>> python manage.py runserver 8000 (to run in specific port)
